@@ -12,6 +12,7 @@ export class ScrollSequence {
     canvas: any;
 
     constructor(opts: any) {
+        debugger;
         this.opts = {
             container: "body",
             starts: "out",

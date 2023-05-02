@@ -1,5 +1,7 @@
+import ScrollScene from "../scroll-scene/ScrollScene";
+
 function HomePage() {
-    return <h1>HomePage</h1>;
+    return <ScrollScene />;
 }
 
 export default HomePage;

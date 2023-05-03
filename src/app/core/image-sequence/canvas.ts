@@ -15,6 +15,7 @@ export class AppCanvas {
 
     setup() {
         this.canvas = document.createElement("canvas");
+        this.canvas.classList.add("scene-canvas");
         this.container.appendChild(this.canvas);
         this.ctx = this.canvas.getContext("2d");
 
@@ -68,8 +69,6 @@ export class AppCanvas {
     resize() {
         const w = this.container.clientWidth;
         const h = this.container.clientHeight;
-        this.canvas.style.height = `${h}px`;
-        this.canvas.style.width = `${w}px`;
         this.canvas.height = h;
         this.canvas.width = w;
 

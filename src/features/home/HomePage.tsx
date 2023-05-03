@@ -1,5 +1,9 @@
 import ScrollContainer from "../scrollScene/ScrollContainer";
 import ScrollScene from "../scrollScene/ScrollScene";
+import {
+    cookerSceneContent,
+    panSceneContent,
+} from "../../app/core/scene-content";
 
 function HomePage() {
     return (
@@ -13,6 +17,7 @@ function HomePage() {
                 cover
                 playUntil="scroll-out"
                 starts="in"
+                scrollContent={cookerSceneContent}
             />
             <ScrollScene
                 sectionName="scene-02"
@@ -23,6 +28,7 @@ function HomePage() {
                 cover
                 playUntil="scroll-out"
                 starts="in"
+                scrollContent={panSceneContent}
             />
         </ScrollContainer>
     );

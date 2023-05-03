@@ -1,16 +1,17 @@
-.scroll-container {
-    height: 100vh;
-}
-
-.speak {
+.scene-content {
     margin: 150vh 0;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.speak:first-child {
+.scene-content:first-child {
     margin-top: -75vh;
 }
 
-.speak[data-scroll] {
+.scene-content[data-scroll] {
     transform: translateY(calc(var(--viewport-y) * 30vh));
     opacity: calc(var(--visible-y));
 }
@@ -32,6 +33,14 @@
     background-repeat: no-repeat;
 }
 
+.scene-canvas {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 h1 {
     font-size: 3em;
     width: 60wv;
@@ -41,23 +50,4 @@ h1 {
         font-size: 2em;
         width: 100%;
     }
-}
-
-:root {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-shadow: 0 0 12px rgba(black, .8);
-}
-
-body {
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.hidden {
-    visibility: hidden;
 }

@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 
 import { ScrollSequence } from "../../app/core/image-sequence/scrollSequence";
 import "./scroll-scene.css";
 
 interface Props {
+    scrollContent: ReactNode[];
     sectionName: string;
     paddedZeros: number;
     totalFrames: number;
@@ -17,6 +18,7 @@ interface Props {
 }
 
 function ScrollScene({
+    scrollContent,
     imagesRoot,
     imageExtension,
     paddedZeros,
@@ -46,7 +48,13 @@ function ScrollScene({
             starts,
             ends,
         });
-    }, []);
+    });
+
+    const renderedScrollContent = scrollContent.map((content, index) => (
+        <div className="scene-content" key={index}>
+            {content}
+        </div>
+    ));
 
     return (
         <section
@@ -54,22 +62,7 @@ function ScrollScene({
         >
             <div className={`scroll-sequence ${sectionName}-sequence`}></div>
             <div className="scroll-sequence__content">
-                <div className="speak">
-                    <h1>OMM IS AN AUTOMATED EGG COOKER.</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text. simply dummy Lorem
-                        Ipsum is simply dummy text. simply dummy loream ipsum
-                        loream ipsum.
-                    </p>
-                </div>
-                <div className="speak hidden">
-                    <h1>This is Apple's image sequence</h1>
-                    <p>All copyrights to them. Please don't sue me!</p>
-                </div>
-                <div className="speak hidden">
-                    <h1>The Text Animation</h1>
-                    <p>Is created with Scroll-out.js. Go check it out!</p>
-                </div>
+                {renderedScrollContent}
             </div>
         </section>
     );

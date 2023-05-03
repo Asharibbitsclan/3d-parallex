@@ -1,0 +1,23 @@
+:root {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 0 0 12px rgba(black, .8);
+    --color-primary: #418EC6;
+}
+
+body {
+    background: linear-gradient(180deg, #480B86 0%, #0692CD 11.46%, #1B41D4 21.88%, #6C0DB4 33.33%, #AC1048 52.08%, #10507F 68.75%, rgba(0, 0, 0, 0) 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}

@@ -1,10 +1,9 @@
-import { ReactNode, useEffect } from "react";
+import { useEffect } from "react";
 
 import { ScrollSequence } from "../../app/core/image-sequence/scrollSequence";
 import "./scroll-scene.css";
 
 interface Props {
-    scrollContent: ReactNode[];
     sectionName: string;
     paddedZeros: number;
     totalFrames: number;
@@ -15,10 +14,10 @@ interface Props {
     playUntil?: string;
     starts?: string;
     ends?: string;
+    scrollHeight: number;
 }
 
 function ScrollScene({
-    scrollContent,
     imagesRoot,
     imageExtension,
     paddedZeros,
@@ -29,6 +28,7 @@ function ScrollScene({
     priorityFrames = [0, 20, 40, 60, 90],
     starts,
     sectionName,
+    scrollHeight,
 }: Props) {
     useEffect(() => {
         const imageSequences: string[] = [];
@@ -50,21 +50,13 @@ function ScrollScene({
         });
     });
 
-    const renderedScrollContent = scrollContent.map((content, index) => (
-        <div className="scene-content" key={index}>
-            {content}
-        </div>
-    ));
-
     return (
-        <section
+        <div
             className={`scroll-sequence__container ${sectionName}-container`}
+            style={{ height: `${scrollHeight}vh` }}
         >
-            <div className={`scroll-sequence ${sectionName}-sequence`}></div>
-            <div className="scroll-sequence__content">
-                {renderedScrollContent}
-            </div>
-        </section>
+            <div className={`scroll-sequence ${sectionName}-sequence`} />
+        </div>
     );
 }
 

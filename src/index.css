@@ -1,8 +1,4 @@
 :root {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-shadow: 0 0 12px rgba(black, .8);
     --color-primary: #418EC6;
 }
 
@@ -20,4 +16,34 @@ body {
 
 .color-primary {
     color: var(--color-primary);
+}
+
+.main-container {
+    background: linear-gradient(180deg, #040631 0%, rgba(4, 6, 49, 0) 96.67%);
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 80px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.hero-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 440px;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 45px;
+}
+
+.hero-section p {
+    font-size: 15px;
 }

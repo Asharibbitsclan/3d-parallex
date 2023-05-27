@@ -32,9 +32,9 @@ function ScrollScene({
 }: Props) {
     useEffect(() => {
         const imageSequences: string[] = [];
-        for (let i = 0; i <= totalFrames; i++) {
+        for (let i = 1; i <= totalFrames; i++) {
             imageSequences.push(
-                `${`${i}`.padStart(paddedZeros, "0")}.${imageExtension}`
+                `(${i}).${imageExtension}`
             );
         }
         new ScrollSequence({

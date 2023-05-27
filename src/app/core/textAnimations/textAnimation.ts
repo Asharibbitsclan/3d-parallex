@@ -46,7 +46,6 @@ export function startTextAnimations() {
                 scrollPercentage >= index * 10 &&
                 scrollPercentage < (index + 1) * 10
             ) {
-                debugger;
                 // Calculate fade-in and fade-out percentages
                 const fadeInPercentage = index * 10 + 1;
                 const fadeOutPercentage = (index + 1) * 10 - 1;

@@ -7,7 +7,7 @@ function BannerSection() {
                 index={1}
                 imageUrl="./assets/images/banner-1.png"
                 heading={
-                    <h1>
+                    <h1 className="primary-heading">
                         <span className="color-primary">Quick</span> and{" "}
                         <span className="color-primary">Efficient.</span>
                     </h1>
@@ -20,7 +20,7 @@ function BannerSection() {
                 alter
                 imageUrl="./assets/images/banner-2.png"
                 heading={
-                    <h1>
+                    <h1 className="primary-heading">
                         {" "}
                         <span className="color-primary">
                             Fast Food Pace. <br />
@@ -36,7 +36,7 @@ function BannerSection() {
                 index={3}
                 imageUrl="./assets/images/banner-3.png"
                 heading={
-                    <h1>
+                    <h1 className="primary-heading">
                         <span className="color-primary">Increase</span> Your{" "}
                         <span className="color-primary">Capacity.</span> <br />
                         <span className="color-primary">Lower</span> Your{" "}

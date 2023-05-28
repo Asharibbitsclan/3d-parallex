@@ -24,7 +24,7 @@ function HomePage() {
             <AppNavbar />
             <div className="main-container">
                 <div className="hero-section">
-                    <h1>
+                    <h1 className="primary-heading">
                         <span className="color-primary">Crush</span> Your{" "}
                         <span className="color-primary">Morning</span> Rush with{" "}
                         <span className="color-primary">OMM.</span>

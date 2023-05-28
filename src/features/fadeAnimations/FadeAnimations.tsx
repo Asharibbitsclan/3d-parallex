@@ -3,8 +3,8 @@ import "./fade-animations.css";
 function FadeAnimations() {
     return (
         <div className="fade-animations-container">
-            <div className="fade-animation">
-                <h1>
+            <div className="fade-animation opacity-0">
+                <h1 className="primary-heading">
                     <span className="color-primary">Here to Help.</span> Not
                     Replace.
                 </h1>

@@ -4,6 +4,7 @@ function BannerSection() {
     return (
         <>
             <Banner
+                index={1}
                 imageUrl="./assets/images/banner-1.png"
                 heading={
                     <h1>
@@ -15,6 +16,7 @@ function BannerSection() {
                 That Gets Your Customers Served Fast."
             />
             <Banner
+                index={2}
                 alter
                 imageUrl="./assets/images/banner-2.png"
                 heading={
@@ -31,6 +33,7 @@ function BannerSection() {
                 From Easy To Hard."
             />
             <Banner
+                index={3}
                 imageUrl="./assets/images/banner-3.png"
                 heading={
                     <h1>

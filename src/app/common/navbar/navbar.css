@@ -17,4 +17,9 @@
     background: white !important;
     padding: 5px 24px !important;
     font-size: 15px !important;
+    color: #225094 !important;
+}
+
+.app-navbar-btn:hover {
+    color: #225094 !important;
 }

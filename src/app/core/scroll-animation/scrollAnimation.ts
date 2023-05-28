@@ -4,45 +4,50 @@ export function startTextAnimations() {
     ) as HTMLElement;
     const headings = document.querySelectorAll(".fade-animation");
 
+    const canvas = document.querySelector(".scene-canvas") as HTMLElement;
+    const heroSection = document.querySelector(".hero-section") as HTMLElement;
+
     window.addEventListener("scroll", () => {
         const scrollPosition = window.pageYOffset;
         const containerHeight = container.offsetHeight;
         const scrollPercentage = (scrollPosition / containerHeight) * 100;
 
         if (scrollPercentage <= 1) {
-            const heroSection = document.querySelector(
-                ".hero-section"
-            ) as HTMLElement;
             heroSection.style.opacity = "1";
         }
 
         if (scrollPercentage >= 1 && scrollPercentage < 3) {
-            const heroSection = document.querySelector(
-                ".hero-section"
-            ) as HTMLElement;
-            const opacity = Math.abs(1 - scrollPercentage / 10);
+            const opacity = Math.abs(1 - scrollPercentage / 3);
             heroSection.style.opacity = opacity.toString();
         }
 
-        if (scrollPercentage < 5) {
-            (
-                document.querySelector(".scene-canvas") as HTMLElement
-            ).style.opacity = "0";
+        if (scrollPercentage >= 3) {
+            heroSection.style.opacity = "0";
         }
 
-        if (scrollPercentage >= 3) {
-            (
-                document.querySelector(".hero-section") as HTMLElement
-            ).style.opacity = "0";
+        if (scrollPercentage < 5) {
+            canvas.style.opacity = "0";
         }
-        if (scrollPercentage >= 3.5) {
-            (
-                document.querySelector(".scene-canvas") as HTMLElement
-            ).style.opacity = "1";
+
+        if (scrollPercentage >= 3.5 && scrollPercentage < 5) {
+            const currentOpacity = Number(canvas.style.opacity);
+            canvas.style.opacity = (
+                currentOpacity +
+                scrollPercentage / 10
+            ).toString();
+        }
+
+        if (scrollPercentage >= 5) {
+            canvas.style.opacity = "1";
+        }
+
+        if (scrollPercentage >= 95.5) {
+            canvas.style.opacity = "0";
         }
 
         headings.forEach((heading, index) => {
             if (
+                scrollPercentage > 5 &&
                 scrollPercentage >= index * 10 &&
                 scrollPercentage < (index + 1) * 10
             ) {

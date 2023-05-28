@@ -4,7 +4,7 @@ import ScrollContainer from "../scrollScene/ScrollContainer";
 import ScrollScene from "../scrollScene/ScrollScene";
 import FadeAnimations from "../fadeAnimations/FadeAnimations";
 import GradientButton from "../../app/common/buttons/GradientButton";
-import { startTextAnimations } from "../../app/core/textAnimations/textAnimation";
+import { startTextAnimations } from "../../app/core/scroll-animation/scrollAnimation";
 import BannerSection from "./BannerSection";
 import AnimatedOvanSection from "./AnimatedOvanSection";
 import FaqsSection from "./FaqsSection";

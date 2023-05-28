@@ -2,7 +2,7 @@ import Banner from "../../app/common/banner/Banner";
 
 function BannerSection() {
     return (
-        <>
+        <div className="banner-section">
             <Banner
                 index={1}
                 imageUrl="./assets/images/banner-1.png"
@@ -47,7 +47,7 @@ function BannerSection() {
                 For Hourly Sales Giving You The Opportunity To Grow Revenue,
                 Profits And Your Business."
             />
-        </>
+        </div>
     );
 }
 

@@ -1,0 +1,25 @@
+.app-navbar {
+    background: transparent !important;
+    padding: 20px 0 !important;
+}
+
+.app-navbar-logo {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.app-navbar-link {
+    margin: 0 20px !important;
+    color: white !important;
+}
+
+.app-navbar-btn {
+    background: white !important;
+    padding: 5px 24px !important;
+    font-size: 15px !important;
+    color: #225094 !important;
+}
+
+.app-navbar-btn:hover {
+    color: #225094 !important;
+}

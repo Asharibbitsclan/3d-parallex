@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-primary: #418EC6;
+}
+
+body {
+    background: linear-gradient(180deg, #480B86 0%, #0692CD 11.46%, #1B41D4 21.88%, #6C0DB4 33.33%, #AC1048 52.08%, #10507F 85.75%, rgba(0, 0, 0, 0) 100%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.color-primary {
+    color: var(--color-primary) !important;
+    font-weight: 600;
+}
+
+.primary-heading {
+    font-weight: 300;
+}
+
+.main-container {
+    background: linear-gradient(180deg, #040631 0%, rgba(4, 6, 49, .5) 96.67%, rgba(4, 6, 49, 0) 100%);
+    position: relative;
+    width: 90%;
+    left: 5%;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.hero-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+    color: white;
+    width: 500px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 45px;
+}
+
+.hero-section p {
+    font-size: 15px;
+}
+
+.banner {
+    margin-top: 237px;
+    color: white;
+    position: relative;
+}
+
+.banner-row {
+    height: 400px;
+    position: relative;
+}
+
+.banner-row .col-md-6 {
+    padding: 0 !important;
+}
+
+.banner-img {
+    height: 100%;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 20px;
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 0 12%;
+    backdrop-filter: blur(23px);
+    font-size: 18px;
+}
+
+.banner .filled-circle {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .banner-doodle {
+    position: absolute;
+    z-index: 0;
+}
+
+.u-remove-border-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.u-remove-border-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.animated-ovan-section {
+    display: flex;
+    justify-content: center;
+    padding: 200px 0 100px 0;
+}
+
+.animated-ovan {
+    width: 800px;
+}
+
+.faq-heading {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.faq-heading h1 {
+    font-size: 100px;
+    margin-right: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.faq-heading p {
+    font-size: 18px;
+    margin-top: 30px ;
+    margin-bottom: 0;
+}
+
+.faqs-section {
+    padding-bottom: 144px;
+}
+
+.faqs-section .accordion-item {
+    border: 2px solid white;
+    margin: 30px 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.35);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(42.5px);
+    color: white !important;
+    padding: 0 20px;
+}
+
+.faqs-section .accordion-header button {
+    border-radius: 30px  !important;
+    color: white !important;
+    background: transparent;
+    border: none;
+    font-size: 35px;
+    box-shadow: none;
+}
+
+.faqs-section .accordion-body {
+    font-size: 22px;
+}
+
+.faqs-container {
+    position: relative;
+}
+
+.faqs-doodle {
+    position: absolute;
+}
+
+.join-demo-section {
+    text-align: center;
+    padding: 35px 0;
+    background: rgba(255, 255, 255, 0.35);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(42.5px);
+}
+
+.join-demo-section h1 {
+    font-size: 55px;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.kitchen-product-section {
+    height: 650px;
+}
+
+.kitchen-product-img {
+    background: url("/public/assets/images/kitchen-product-bg.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: #1F287A;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.footer-email {
+    background: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.footer-email::placeholder {
+    color: white !important;
+}
+
+.footer-email-btn {
+    background: white;
+    border: 1px solid white;
+    font-size: 15px;
+    color: #418EC6;
+}
+
+.doodles {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.doodles img {
+    position: absolute;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+h1.visible {
+    opacity: 1;
+}
+
+h1.fade-in {
+    opacity: 1;
+}
+
+h1.fade-out {
+    opacity: 0;
+}

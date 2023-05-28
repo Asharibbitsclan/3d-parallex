@@ -1,22 +1,9 @@
 .scroll-container {
-    height: 100vh;
+    position: relative;
 }
 
-.speak {
-    margin: 150vh 0;
-}
-
-.speak:first-child {
-    margin-top: -75vh;
-}
-
-.speak[data-scroll] {
-    transform: translateY(calc(var(--viewport-y) * 30vh));
-    opacity: calc(var(--visible-y));
-}
-
-.scroll-sequence__content {
-    padding: 4em;
+.scroll-sequence__container {
+    position: relative;
 }
 
 .scroll-sequence {
@@ -25,39 +12,20 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -5;
+    z-index: 1;
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-h1 {
-    font-size: 3em;
-    width: 60wv;
-    margin-bottom: 10px;
-
-    @media screen and (max-width: 600px) {
-        font-size: 2em;
-        width: 100%;
-    }
-}
-
-:root {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-shadow: 0 0 12px rgba(black, .8);
-}
-
-body {
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.hidden {
-    visibility: hidden;
+.scene-canvas {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

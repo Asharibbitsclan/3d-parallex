@@ -14,6 +14,7 @@ interface Props {
     playUntil?: string;
     starts?: string;
     ends?: string;
+    scrollHeight: number;
 }
 
 function ScrollScene({
@@ -27,12 +28,13 @@ function ScrollScene({
     priorityFrames = [0, 20, 40, 60, 90],
     starts,
     sectionName,
+    scrollHeight,
 }: Props) {
     useEffect(() => {
         const imageSequences: string[] = [];
-        for (let i = 0; i <= totalFrames; i++) {
+        for (let i = 1; i <= totalFrames; i++) {
             imageSequences.push(
-                `${`${i}`.padStart(paddedZeros, "0")}.${imageExtension}`
+                `(${i}).${imageExtension}`
             );
         }
         new ScrollSequence({
@@ -46,32 +48,15 @@ function ScrollScene({
             starts,
             ends,
         });
-    }, []);
+    });
 
     return (
-        <section
+        <div
             className={`scroll-sequence__container ${sectionName}-container`}
+            style={{ height: `${scrollHeight}vh` }}
         >
-            <div className={`scroll-sequence ${sectionName}-sequence`}></div>
-            <div className="scroll-sequence__content">
-                <div className="speak">
-                    <h1>OMM IS AN AUTOMATED EGG COOKER.</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text. simply dummy Lorem
-                        Ipsum is simply dummy text. simply dummy loream ipsum
-                        loream ipsum.
-                    </p>
-                </div>
-                <div className="speak hidden">
-                    <h1>This is Apple's image sequence</h1>
-                    <p>All copyrights to them. Please don't sue me!</p>
-                </div>
-                <div className="speak hidden">
-                    <h1>The Text Animation</h1>
-                    <p>Is created with Scroll-out.js. Go check it out!</p>
-                </div>
-            </div>
-        </section>
+            <div className={`scroll-sequence ${sectionName}-sequence`} />
+        </div>
     );
 }
 

@@ -11,6 +11,8 @@ import FaqsSection from "./FaqsSection";
 import JoinDemoSection from "./JoinDemoSection";
 import KitchenProductSection from "./KitchenProductSection";
 import Footer from "../../app/common/footer/Footer";
+import AppNavbar from "../../app/common/navbar/AppNavbar";
+import Doodles from "./Doodles";
 
 function HomePage() {
     useEffect(() => {
@@ -19,6 +21,7 @@ function HomePage() {
 
     return (
         <>
+            <AppNavbar />
             <div className="main-container">
                 <div className="hero-section">
                     <h1>
@@ -36,6 +39,7 @@ function HomePage() {
                         className="mt-3"
                     />
                 </div>
+                <Doodles />
                 <ScrollContainer>
                     <ScrollScene
                         sectionName="scene-01"

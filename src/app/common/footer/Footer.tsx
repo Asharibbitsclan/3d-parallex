@@ -44,8 +44,29 @@ function Footer() {
                             Generate outside the box thinking with the
                             possibility to targtet the low
                         </p>
+                        <div className="input-group mb-3">
+                            <input
+                                type="text"
+                                className="form-control footer-email"
+                                placeholder="Enter email..."
+                                aria-label="Enter email..."
+                                aria-describedby="btn-email-footer"
+                            />
+                            <button
+                                className="btn btn-outline-secondary footer-email-btn"
+                                type="button"
+                                id="btn-email-footer"
+                            >
+                                Submit
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <hr />
+                <p>
+                    &copy; 2023 Bitsclan All rights reserved. | Terms and
+                    Conditions | Return policy
+                </p>
             </div>
         </div>
     );

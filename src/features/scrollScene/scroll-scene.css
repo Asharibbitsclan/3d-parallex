@@ -1,23 +1,9 @@
-.scene-content {
-    margin: 150vh 0;
-    text-align: center;
-    width: 80%;
+.scroll-container {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.scene-content:first-child {
-    margin-top: -75vh;
-}
-
-.scene-content[data-scroll] {
-    transform: translateY(calc(var(--viewport-y) * 30vh));
-    opacity: calc(var(--visible-y));
-}
-
-.scroll-sequence__content {
-    padding: 4em;
+.scroll-sequence__container {
+    position: relative;
 }
 
 .scroll-sequence {
@@ -26,7 +12,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -5;
+    z-index: 1;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -34,20 +20,11 @@
 }
 
 .scene-canvas {
-    height: 80%;
-    width: 80%;
     position: absolute;
+    height: 60%;
+    width: 60%;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
-}
-h1 {
-    font-size: 3em;
-    width: 60wv;
-    margin-bottom: 10px;
-
-    @media screen and (max-width: 600px) {
-        font-size: 2em;
-        width: 100%;
-    }
+    opacity: 0;
 }

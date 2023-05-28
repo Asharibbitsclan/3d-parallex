@@ -1,0 +1,11 @@
+.button {
+    font-size: 13px !important;
+    color: white !important;
+    border-radius: 7px !important;
+    padding: 8px 25px !important;
+    border: none !important;
+}
+
+.gradient-btn {
+    background: linear-gradient(94.27deg, #418EC6 1.66%, #225094 97.32%);
+}

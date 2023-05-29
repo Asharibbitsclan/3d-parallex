@@ -34,17 +34,17 @@ body {
     left: 5%;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
+    padding: 0 20px;
 }
 
 .hero-section {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35%);
+    position: sticky;
+    top: 45%;
     text-align: center;
     color: white;
-    width: 500px;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .hero-section h1 {
@@ -73,6 +73,7 @@ body {
 .banner-img {
     height: 100%;
     width: 100%;
+    min-height: 155px;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -118,7 +119,8 @@ body {
 }
 
 .animated-ovan {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .faq-heading {

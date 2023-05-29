@@ -28,13 +28,20 @@ function FaqsSection() {
         <>
             <div className="faqs-section container">
                 <div className="faq-heading">
-                    <h1>FAQ's</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.LoremIpsum is simply dummy text of
-                        the printing and typesetting industry Lorem Ipsum is
-                        simply dummy text of the printing and typesetting.
-                    </p>
+                    <div className="row">
+                        <div className="col-md-3">
+                            <h1>FAQ's</h1>
+                        </div>
+                        <div className="col-md-9">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry.LoremIpsum is simply
+                                dummy text of the printing and typesetting
+                                industry Lorem Ipsum is simply dummy text of the
+                                printing and typesetting.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="faqs-container">
                     <img

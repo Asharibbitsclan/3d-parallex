@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import ScrollContainer from "../scrollScene/ScrollContainer";
 import ScrollScene from "../scrollScene/ScrollScene";
 import FadeAnimations from "../fadeAnimations/FadeAnimations";
-import GradientButton from "../../app/common/buttons/GradientButton";
 import { startTextAnimations } from "../../app/core/scroll-animation/scrollAnimation";
 import BannerSection from "./BannerSection";
 import AnimatedOvanSection from "./AnimatedOvanSection";
@@ -13,6 +12,7 @@ import KitchenProductSection from "./KitchenProductSection";
 import Footer from "../../app/common/footer/Footer";
 import AppNavbar from "../../app/common/navbar/AppNavbar";
 import Doodles from "./Doodles";
+import HeroSection from "./HeroSection";
 
 function HomePage() {
     useEffect(() => {
@@ -23,22 +23,7 @@ function HomePage() {
         <>
             <AppNavbar />
             <div className="main-container">
-                <div className="hero-section">
-                    <h1 className="primary-heading">
-                        <span className="color-primary">Crush</span> Your{" "}
-                        <span className="color-primary">Morning</span> Rush with{" "}
-                        <span className="color-primary">OMM.</span>
-                    </h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text. simply dummy Lorem
-                        Ipsum is simply dummy text. simply dummy loream ipsum
-                        loream ipsum.
-                    </p>
-                    <GradientButton
-                        content="Schedule a Demo"
-                        className="mt-3"
-                    />
-                </div>
+                <HeroSection />
                 <Doodles />
                 <ScrollContainer>
                     <ScrollScene

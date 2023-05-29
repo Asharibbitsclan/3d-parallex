@@ -67,7 +67,8 @@ export class AppCanvas {
     }
 
     resize() {
-        const w = this.container.clientWidth;
+        const w =
+            this.container.clientWidth < 500 ? 800 : this.container.clientWidth;
         const h = this.container.clientHeight;
         this.canvas.height = h;
         this.canvas.width = w;

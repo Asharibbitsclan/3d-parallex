@@ -8,10 +8,7 @@ function HeroSection() {
                 <span className="color-primary">Morning</span> Rush with{" "}
                 <span className="color-primary">OMM.</span>
             </h1>
-            <p>
-                Lorem Ipsum is simply dummy text. simply dummy Lorem Ipsum is
-                simply dummy text. simply dummy loream ipsum loream ipsum.
-            </p>
+            <p>Consistently fresh eggs through the power of automation.</p>
             <GradientButton content="Schedule a Demo" className="mt-3" />
         </div>
     );

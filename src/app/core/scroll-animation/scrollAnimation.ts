@@ -41,7 +41,7 @@ export function startTextAnimations() {
             canvas.style.opacity = "1";
         }
 
-        if (scrollPercentage >= 95.5) {
+        if (scrollPercentage >= 98.5) {
             canvas.style.opacity = "0";
         }
 
@@ -52,8 +52,8 @@ export function startTextAnimations() {
                 scrollPercentage < (index + 1) * 10
             ) {
                 // Calculate fade-in and fade-out percentages
-                const fadeInPercentage = index * 10 + 1;
-                const fadeOutPercentage = (index + 1) * 10 - 1;
+                const fadeInPercentage = index * 14 + 1;
+                const fadeOutPercentage = (index + 1) * 12 - 1;
 
                 if (
                     scrollPercentage >= fadeInPercentage &&

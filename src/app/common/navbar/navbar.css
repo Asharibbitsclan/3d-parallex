@@ -1,25 +1,30 @@
 .app-navbar {
-    background: transparent !important;
-    padding: 20px 0 !important;
+    background: white !important;
+    margin-bottom: 40px;
 }
 
 .app-navbar-logo {
-    margin-right: 10px;
-    width: 40px;
+    width: 92px;
+    height: 64px;
+    object-fit: cover;
 }
 
 .app-navbar-link {
     margin: 0 20px !important;
-    color: white !important;
+    color: #9E9E9E !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
 }
 
 .app-navbar-btn {
-    background: white !important;
-    padding: 5px 24px !important;
-    font-size: 15px !important;
-    color: #225094 !important;
+    transition: all 0.2s ease, visibility 0s;
+    border-radius: 7px !important;
+    border: 2px solid #FFFFFF !important;
+    background: #2534B4 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
 }
 
 .app-navbar-btn:hover {
-    color: #225094 !important;
 }

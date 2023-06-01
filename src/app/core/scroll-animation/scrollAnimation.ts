@@ -3,6 +3,7 @@ export function startTextAnimations() {
         ".scroll-sequence__container"
     ) as HTMLElement;
     const headings = document.querySelectorAll(".fade-animation");
+    const sideHeadings = document.querySelectorAll(".fade-animation-side");
 
     const canvas = document.querySelector(".scene-canvas") as HTMLElement;
     const heroSection = document.querySelector(".hero-section") as HTMLElement;
@@ -72,5 +73,35 @@ export function startTextAnimations() {
                 heading.classList.remove("visible", "fade-in", "fade-out");
             }
         });
+
+        if (scrollPercentage >= 71 && scrollPercentage < 73) {
+            sideHeadings[1].classList.remove("visible", "fade-in");
+            sideHeadings[1].classList.add("fade-out");
+            sideHeadings[2].classList.remove("visible", "fade-in");
+            sideHeadings[2].classList.add("fade-out");
+
+            sideHeadings[0].classList.add("visible", "fade-in");
+            sideHeadings[0].classList.remove("fade-out");
+        } else if (scrollPercentage >= 74 && scrollPercentage < 76) {
+            sideHeadings[0].classList.remove("visible", "fade-in");
+            sideHeadings[0].classList.add("fade-out");
+            sideHeadings[2].classList.remove("visible", "fade-in");
+            sideHeadings[2].classList.add("fade-out");
+
+            sideHeadings[1].classList.add("visible", "fade-in");
+            sideHeadings[1].classList.remove("fade-out");
+        } else if (scrollPercentage >= 77 && scrollPercentage < 79) {
+            sideHeadings[0].classList.remove("visible", "fade-in");
+            sideHeadings[0].classList.add("fade-out");
+            sideHeadings[1].classList.remove("visible", "fade-in");
+            sideHeadings[1].classList.add("fade-out");
+
+            sideHeadings[2].classList.add("visible", "fade-in");
+            sideHeadings[2].classList.remove("fade-out");
+        } else {
+            sideHeadings.forEach((heading) => {
+                heading.classList.remove("visible", "fade-in", "fade-out");
+            });
+        }
     });
 }

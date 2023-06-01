@@ -6,7 +6,7 @@
     z-index: 1;
 }
 
-.fade-animation {
+.fade-animation, .fade-animation-side {
     position: sticky;
     width: 100%;
     top: 7%;
@@ -16,13 +16,20 @@
     color: white;
 }
 
-.fade-animation h1 {
+.fade-animation-side {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    transform: translateY(-50%);
+}
+
+.fade-animation h1, .fade-animation-side h1 {
     font-size: 45px;
 }
 
-.fade-animation p {
-    font-size: 15px;
-    width: 50%;
+.fade-animation p, .fade-animation-side p {
+    font-size: 22px;
     margin: 15px auto;
 }
 

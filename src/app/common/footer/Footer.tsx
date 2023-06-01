@@ -22,7 +22,9 @@ function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Careers</a>
+                                <a href="https://www.bridgeappliances.com">
+                                    Careers
+                                </a>
                             </li>
                             <li>
                                 <a href="https://www.bridgeappliances.com/blog/tags/automation">

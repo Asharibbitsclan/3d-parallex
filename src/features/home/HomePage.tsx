@@ -4,7 +4,6 @@ import ScrollContainer from "../scrollScene/ScrollContainer";
 import ScrollScene from "../scrollScene/ScrollScene";
 import FadeAnimations from "../fadeAnimations/FadeAnimations";
 import { startTextAnimations } from "../../app/core/scroll-animation/scrollAnimation";
-import BannerSection from "./BannerSection";
 import AnimatedOvanSection from "./AnimatedOvanSection";
 import FaqsSection from "./FaqsSection";
 import KitchenProductSection from "./KitchenProductSection";
@@ -16,7 +15,7 @@ import HeroSection from "./HeroSection";
 function HomePage() {
     useEffect(() => {
         startTextAnimations();
-    }, [startTextAnimations]);
+    }, []);
 
     return (
         <>
@@ -38,7 +37,6 @@ function HomePage() {
                     />
                     <FadeAnimations />
                 </ScrollContainer>
-                <BannerSection />
                 <AnimatedOvanSection />
                 <FaqsSection />
             </div>

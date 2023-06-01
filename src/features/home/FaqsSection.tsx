@@ -2,24 +2,32 @@ import { Accordion } from "react-bootstrap";
 
 const faqs = [
     {
-        heading: "What is your work dicipline?",
-        content:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.",
+        heading: "WHAT ARE THE SPECS OF OMM?",
+        content: `OMM was designed to fit in most countertop spaces to ensure it is easily accessible wherever you do your assembly or prep work.
+            W: 17.25"
+            H: 19.5"
+            D: 27.5"
+            OMM uses a 110v outlet and has an expected power draw of 16 AMPS.`,
     },
     {
-        heading: "What is your work dicipline?",
+        heading: "DOES OMM CONNECT TO THE INTERNET?",
         content:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.",
+            "OMM is designed to connect to the internet via Ethernet or Wi-Fi for device monitoring, PoS Integration, and updates. For best results and maximum connectivity, it is advised that OMM is connected to the internet via Ethernet.",
     },
     {
-        heading: "What is your work dicipline?",
+        heading: "WHAT HAPPENS IF OMM BREAKS OR NEEDS PARTS REPLACED?",
         content:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.",
+            "OMM is an advanced system using motors and sensors to collect performance data. OMM reports metrics back to our team on throughput, system malfunctions, and utilization. Customers can sign up for our service which will ensure regularly scheduled maintenance handled by a Bridge Appliance representative.",
     },
     {
-        heading: "What is your work dicipline?",
+        heading: "WHEN CAN I GET AN OMM?",
         content:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.",
+            "Production is expected to start in early 2024. OMMs will be rolled out by region and availability will vary by city or state.",
+    },
+    {
+        heading: "WHEN CAN I DEMO?",
+        content:
+            "Demonstrations will start this summer. Follow our social media pages for updates on any events near you!",
     },
 ];
 

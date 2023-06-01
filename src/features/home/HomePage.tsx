@@ -4,10 +4,8 @@ import ScrollContainer from "../scrollScene/ScrollContainer";
 import ScrollScene from "../scrollScene/ScrollScene";
 import FadeAnimations from "../fadeAnimations/FadeAnimations";
 import { startTextAnimations } from "../../app/core/scroll-animation/scrollAnimation";
-import BannerSection from "./BannerSection";
 import AnimatedOvanSection from "./AnimatedOvanSection";
 import FaqsSection from "./FaqsSection";
-import JoinDemoSection from "./JoinDemoSection";
 import KitchenProductSection from "./KitchenProductSection";
 import Footer from "../../app/common/footer/Footer";
 import AppNavbar from "../../app/common/navbar/AppNavbar";
@@ -17,7 +15,7 @@ import HeroSection from "./HeroSection";
 function HomePage() {
     useEffect(() => {
         startTextAnimations();
-    }, [startTextAnimations]);
+    }, []);
 
     return (
         <>
@@ -35,15 +33,13 @@ function HomePage() {
                         cover
                         playUntil="scroll-out"
                         starts="in"
-                        scrollHeight={1500}
+                        scrollHeight={2500}
                     />
                     <FadeAnimations />
                 </ScrollContainer>
-                <BannerSection />
                 <AnimatedOvanSection />
                 <FaqsSection />
             </div>
-            <JoinDemoSection />
             <KitchenProductSection />
             <Footer />
         </>

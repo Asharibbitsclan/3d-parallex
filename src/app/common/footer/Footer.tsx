@@ -3,64 +3,55 @@ function Footer() {
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-4">
-                        <h4>LOGO</h4>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                        </p>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                        </p>
-                        <p>Weekdays: 7:00 AM - 6:00 PM</p>
-                    </div>
-                    <div className="col-sm-1"></div>
-                    <div className="col-sm-1">
-                        <p>Resources</p>
-                        <p>Community</p>
-                        <p>Events</p>
-                        <p>Help Center</p>
-                        <p>Partner</p>
-                    </div>
-                    <div className="col-sm-1"></div>
-                    <div className="col-sm-1">
-                        <p>Resources</p>
-                        <p>Community</p>
-                        <p>Events</p>
-                        <p>Help Center</p>
-                        <p>Partner</p>
-                    </div>
-                    <div className="col-sm-1"></div>
                     <div className="col-sm-3">
-                        <p>Get Email Notifications</p>
-                        <p>
-                            Generate outside the box thinking with the
-                            possibility to targtet the low
-                        </p>
-                        <div className="input-group mb-3">
-                            <input
-                                type="text"
-                                className="form-control footer-email"
-                                placeholder="Enter email..."
-                                aria-label="Enter email..."
-                                aria-describedby="btn-email-footer"
-                            />
-                            <button
-                                className="btn btn-outline-secondary footer-email-btn"
-                                type="button"
-                                id="btn-email-footer"
-                            >
-                                Submit
-                            </button>
-                        </div>
+                        <h6>Contact</h6>
+                        <a href="mailto:sales@bridgeappliances.com?subject=I%27d%20like%20to%20learn%20more%20about%20Bridge%20Appliances!">
+                            sales@bridgeappliances.com
+                        </a>
                     </div>
+                    <div className="col-sm-3">
+                        <h6>Address</h6>
+                        <p>Portsmouth, NH</p>
+                    </div>
+                    <div className="col-sm-3">
+                        <h6>Company</h6>
+                        <ul>
+                            <li>
+                                <a href="https://www.bridgeappliances.com/about">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.bridgeappliances.com">
+                                    Careers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.bridgeappliances.com/blog/tags/automation">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-sm-3">
+                        <h6>Customers</h6>
+                        <ul>
+                            <li>
+                                <a href="https://www.bridgeappliances.com/omm">
+                                    OMM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.bridgeappliances.com/restaraunt-solutions">
+                                    Restaurant Solutions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p className="text-center mt-5 footer-credits">
+                        ©2020 by Bridge Appliances. Proudly created with Wix.com
+                    </p>
                 </div>
-                <hr />
-                <p>
-                    &copy; 2023 Bitsclan All rights reserved. | Terms and
-                    Conditions | Return policy
-                </p>
             </div>
         </div>
     );

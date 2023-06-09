@@ -4,7 +4,6 @@ import ScrollContainer from "../scrollScene/ScrollContainer";
 import ScrollScene from "../scrollScene/ScrollScene";
 import FadeAnimations from "../fadeAnimations/FadeAnimations";
 import { startTextAnimations } from "../../app/core/scroll-animation/scrollAnimation";
-import AnimatedOvanSection from "./AnimatedOvanSection";
 import FaqsSection from "./FaqsSection";
 import KitchenProductSection from "./KitchenProductSection";
 import Footer from "../../app/common/footer/Footer";
@@ -29,7 +28,7 @@ function HomePage() {
                         paddedZeros={4}
                         totalFrames={1465}
                         imageExtension="png"
-                        imagesRoot="./assets/scenes/merged/scene "
+                        imagesRoot="https://bridge-appliances.thewonderworkout.com/assets/scenes/merged/scene "
                         cover
                         playUntil="scroll-out"
                         starts="in"
@@ -37,7 +36,6 @@ function HomePage() {
                     />
                     <FadeAnimations />
                 </ScrollContainer>
-                <AnimatedOvanSection />
                 <FaqsSection />
             </div>
             <KitchenProductSection />

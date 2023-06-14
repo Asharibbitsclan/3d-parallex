@@ -26,13 +26,13 @@ function HomePage() {
                     <ScrollScene
                         sectionName="scene-01"
                         paddedZeros={4}
-                        totalFrames={1465}
+                        totalFrames={1396}
                         imageExtension="png"
-                        imagesRoot="https://bridge-appliances.thewonderworkout.com/assets/scenes/merged/scene "
+                        imagesRoot="https://bridge-appliances.thewonderworkout.com/assets/scenes/V3/scene "
                         cover
                         playUntil="scroll-out"
                         starts="in"
-                        scrollHeight={2500}
+                        scrollHeight={1900}
                     />
                     <FadeAnimations />
                 </ScrollContainer>

@@ -50,11 +50,11 @@ export function startTextAnimations() {
             if (
                 scrollPercentage > 5 &&
                 scrollPercentage >= index * 10 &&
-                scrollPercentage < (index + 1) * 10
+                scrollPercentage < 64
             ) {
                 // Calculate fade-in and fade-out percentages
-                const fadeInPercentage = index * 14 + 1;
-                const fadeOutPercentage = (index + 1) * 12 - 1;
+                const fadeInPercentage = index * 10 + 1;
+                const fadeOutPercentage = (index + 1) * 10 - 1;
 
                 if (
                     scrollPercentage >= fadeInPercentage &&
@@ -74,7 +74,7 @@ export function startTextAnimations() {
             }
         });
 
-        if (scrollPercentage >= 71 && scrollPercentage < 73) {
+        if (scrollPercentage >= 64 && scrollPercentage < 67) {
             sideHeadings[1].classList.remove("visible", "fade-in");
             sideHeadings[1].classList.add("fade-out");
             sideHeadings[2].classList.remove("visible", "fade-in");
@@ -82,7 +82,7 @@ export function startTextAnimations() {
 
             sideHeadings[0].classList.add("visible", "fade-in");
             sideHeadings[0].classList.remove("fade-out");
-        } else if (scrollPercentage >= 74 && scrollPercentage < 76) {
+        } else if (scrollPercentage >= 68 && scrollPercentage < 70) {
             sideHeadings[0].classList.remove("visible", "fade-in");
             sideHeadings[0].classList.add("fade-out");
             sideHeadings[2].classList.remove("visible", "fade-in");
@@ -90,7 +90,7 @@ export function startTextAnimations() {
 
             sideHeadings[1].classList.add("visible", "fade-in");
             sideHeadings[1].classList.remove("fade-out");
-        } else if (scrollPercentage >= 77 && scrollPercentage < 79) {
+        } else if (scrollPercentage >= 71 && scrollPercentage < 73) {
             sideHeadings[0].classList.remove("visible", "fade-in");
             sideHeadings[0].classList.add("fade-out");
             sideHeadings[1].classList.remove("visible", "fade-in");

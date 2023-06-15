@@ -53,7 +53,7 @@ function FaqsSection() {
                 </div>
                 <div className="faqs-container">
                     <img
-                        src="/assets/images/outline-circle-dark.svg"
+                        src="./assets/images/outline-circle-dark.svg"
                         className="faqs-doodle"
                         style={{
                             width: 80,
@@ -62,7 +62,7 @@ function FaqsSection() {
                         }}
                     />
                     <img
-                        src="/assets/images/blue-filled-circle.svg"
+                        src="./assets/images/blue-filled-circle.svg"
                         className="faqs-doodle"
                         style={{
                             width: 150,
@@ -71,7 +71,7 @@ function FaqsSection() {
                         }}
                     />
                     <img
-                        src="/assets/images/green-filled-circle.svg"
+                        src="./assets/images/green-filled-circle.svg"
                         className="faqs-doodle"
                         style={{
                             bottom: "-7%",
@@ -79,7 +79,7 @@ function FaqsSection() {
                         }}
                     />
                     <img
-                        src="/assets/images/outline-circle-dark.svg"
+                        src="./assets/images/outline-circle-dark.svg"
                         className="faqs-doodle"
                         style={{
                             width: 100,

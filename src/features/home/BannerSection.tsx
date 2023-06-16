@@ -5,7 +5,7 @@ function BannerSection() {
         <div className="banner-section">
             <Banner
                 index={1}
-                imageUrl="./assets/images/banner-1.png"
+                imageUrl="../assets/images/banner-1.png"
                 heading={
                     <h1 className="primary-heading">
                         <span className="color-primary">Quick</span> and{" "}
@@ -18,7 +18,7 @@ function BannerSection() {
             <Banner
                 index={2}
                 alter
-                imageUrl="./assets/images/banner-2.png"
+                imageUrl="../assets/images/banner-2.png"
                 heading={
                     <h1 className="primary-heading">
                         {" "}
@@ -34,7 +34,7 @@ function BannerSection() {
             />
             <Banner
                 index={3}
-                imageUrl="./assets/images/banner-3.png"
+                imageUrl="../assets/images/banner-3.png"
                 heading={
                     <h1 className="primary-heading">
                         <span className="color-primary">Increase</span> Your{" "}

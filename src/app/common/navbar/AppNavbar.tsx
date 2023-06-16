@@ -11,7 +11,7 @@ function AppNavbar() {
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src="/assets/images/logo.png"
+                        src="./assets/images/logo.png"
                         width="30"
                         height="30"
                         className="d-inline-block align-top app-navbar-logo"

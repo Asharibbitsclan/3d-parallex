@@ -41,12 +41,12 @@ function Banner({ imageUrl, heading, content, alter, index }: Props) {
     return (
         <div className="banner container">
             <img
-                src="/assets/images/filled-circle.svg"
+                src="./assets/images/filled-circle.svg"
                 className="banner-doodle filled-circle"
                 style={filledStyles}
             />
             <img
-                src="/assets/images/outline-circle.svg"
+                src="./assets/images/outline-circle.svg"
                 className="banner-doodle"
                 style={outlinedStyles}
             />

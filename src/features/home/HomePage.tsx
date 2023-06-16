@@ -28,7 +28,8 @@ function HomePage() {
                         paddedZeros={4}
                         totalFrames={1396}
                         imageExtension="png"
-                        imagesRoot="https://bridge-appliances.thewonderworkout.com/assets/scenes/V3/scene "
+                        // imagesRoot="https://bridge-appliances.thewonderworkout.com/assets/scenes/V3/scene "
+                        imagesRoot="./assets/scenes/merged/scene "
                         cover
                         playUntil="scroll-out"
                         starts="in"

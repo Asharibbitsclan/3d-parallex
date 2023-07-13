@@ -24,6 +24,13 @@ export class AppCanvas {
     }
 
     renderIndex(e: any) {
+        if (e >= 1310) {
+            this.canvas.style.height = "100%";
+            this.canvas.style.width = "100%";
+        } else {
+            this.canvas.style.height = "75%";
+            this.canvas.style.width = "75%";
+        }
         if (this.images[e]) {
             return this.drawImage(e);
         }

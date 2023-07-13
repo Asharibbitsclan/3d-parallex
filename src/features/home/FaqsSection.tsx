@@ -52,41 +52,6 @@ function FaqsSection() {
                     </div>
                 </div>
                 <div className="faqs-container">
-                    <img
-                        src="./assets/images/outline-circle-dark.svg"
-                        className="faqs-doodle"
-                        style={{
-                            width: 80,
-                            top: "-6%",
-                            left: "-2%",
-                        }}
-                    />
-                    <img
-                        src="./assets/images/blue-filled-circle.svg"
-                        className="faqs-doodle"
-                        style={{
-                            width: 150,
-                            top: "-10%",
-                            right: "-4%",
-                        }}
-                    />
-                    <img
-                        src="./assets/images/green-filled-circle.svg"
-                        className="faqs-doodle"
-                        style={{
-                            bottom: "-7%",
-                            left: "50%",
-                        }}
-                    />
-                    <img
-                        src="./assets/images/outline-circle-dark.svg"
-                        className="faqs-doodle"
-                        style={{
-                            width: 100,
-                            bottom: "-10%",
-                            right: "-2%",
-                        }}
-                    />
                     <Accordion>
                         {faqs.map((faq, index) => (
                             <Accordion.Item

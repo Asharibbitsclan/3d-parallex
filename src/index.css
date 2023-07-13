@@ -5,7 +5,6 @@
 }
 
 body {
-    background: linear-gradient(180deg, #480B86 0%, #0692CD 11.46%, #1B41D4 21.88%, #6C0DB4 33.33%, #AC1048 52.08%, #10507F 85.75%, rgba(0, 0, 0, 0) 100%);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -28,13 +27,8 @@ body {
 }
 
 .main-container {
-    background: linear-gradient(180deg, #040631 0%, rgba(4, 6, 49, .5) 96.67%, rgba(4, 6, 49, 0) 100%);
+    background: #040631;
     position: relative;
-    width: 90%;
-    left: 5%;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    padding: 0 20px;
 }
 
 .hero-section {
@@ -145,26 +139,24 @@ body {
 }
 
 .faqs-section {
-    padding-bottom: 144px;
+    padding: 100px 3%;
 }
 
 .faqs-section .accordion-item {
     border: 2px solid white;
     margin: 30px 0;
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.35);
-    mix-blend-mode: normal;
-    backdrop-filter: blur(42.5px);
-    color: white !important;
+    background: white;
+    color: black !important;
     padding: 0 20px;
 }
 
 .faqs-section .accordion-header button {
     border-radius: 30px  !important;
-    color: white !important;
+    color: black !important;
     background: transparent;
     border: none;
-    font-size: 35px;
+    font-size: 30px;
     box-shadow: none;
 }
 

@@ -3,11 +3,13 @@ import "./fade-animations.css";
 function FadeAnimations() {
     return (
         <div className="fade-animations-container">
-            <div className="fade-animation fade-out">
+            <div className="fade-animation fade-in">
                 <h1 className="primary-heading">
-                    <span className="color-primary">Here to Help.</span> Not
-                    Replace.
+                    <span className="color-primary">Crush</span> Your{" "}
+                    <span className="color-primary">Morning</span> Rush with{" "}
+                    <span className="color-primary">OMM.</span>
                 </h1>
+                <p>Consistently fresh eggs through the power of automation.</p>
             </div>
             <div className="fade-animation fade-out">
                 <h1 className="primary-heading">

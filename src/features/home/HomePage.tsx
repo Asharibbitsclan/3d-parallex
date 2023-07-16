@@ -8,6 +8,7 @@ import FaqsSection from "./FaqsSection";
 import KitchenProductSection from "./KitchenProductSection";
 import Footer from "../../app/common/footer/Footer";
 import AppNavbar from "../../app/common/navbar/AppNavbar";
+import CallToAction from "../callToAction/CallToAction";
 
 function HomePage() {
     useEffect(() => {
@@ -35,6 +36,7 @@ function HomePage() {
                 </ScrollContainer>
                 <FaqsSection />
             </div>
+            <CallToAction />
             <KitchenProductSection />
             <Footer />
         </>

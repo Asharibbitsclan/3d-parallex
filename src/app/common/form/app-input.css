@@ -1,0 +1,20 @@
+.app-input {
+    width: 95%;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    padding: 18px 25px;
+    margin-top: 5px;
+}
+
+.app-label {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.app-input:hover, .app-input:focus {
+    background-color: white;
+}
+
+.app-input option {
+    background-color: #ebebeb;
+}

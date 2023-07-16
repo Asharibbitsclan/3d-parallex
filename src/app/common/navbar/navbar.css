@@ -1,6 +1,7 @@
 .app-navbar {
     background: white !important;
     margin-bottom: 40px;
+    padding: 0 !important;
 }
 
 .app-navbar-logo {
@@ -10,10 +11,19 @@
 }
 
 .app-navbar-link {
-    margin: 0 10px !important;
+    margin: 0 8px !important;
     color: #9E9E9E !important;
     font-size: 20px !important;
     font-weight: 600 !important;
+    position: relative;
+}
+
+.app-navbar-link:hover {
+    color: black !important;
+}
+
+.app-navbar-link:hover .blog-link {
+    display: block !important;
 }
 
 .app-navbar-btn {
@@ -22,6 +32,18 @@
     border: 2px solid #FFFFFF !important;
     background: #2534B4 !important;
     color: white !important;
-    padding: 10px 20px !important;
+    padding: 8px 16px !important;
     font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.blog-link {
+    display: none !important;
+    position: absolute;
+    width: 100%;
+    left: 18px;
 }

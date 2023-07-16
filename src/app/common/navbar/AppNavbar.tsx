@@ -34,16 +34,16 @@ function AppNavbar() {
                             Restaurant Solutions
                         </Nav.Link>
                         <Nav.Link
-                            href="https://www.bridgeappliances.com/omm"
-                            className="app-navbar-link"
-                        >
-                            OMM
-                        </Nav.Link>
-                        <Nav.Link
                             href="https://www.bridgeappliances.com/about"
                             className="app-navbar-link"
                         >
                             About
+                            <Nav.Link
+                                href="https://www.bridgeappliances.com/blog"
+                                className="blog-link"
+                            >
+                                Blog
+                            </Nav.Link>
                         </Nav.Link>
                         <button className="btn app-navbar-btn">
                             Schedule a Demo

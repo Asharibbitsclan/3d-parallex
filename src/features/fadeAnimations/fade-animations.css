@@ -9,11 +9,11 @@
 .fade-animation, .fade-animation-side {
     position: sticky;
     width: 100%;
-    top: 7%;
+    top: 4%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .fade-animation-side {
@@ -25,11 +25,11 @@
 }
 
 .fade-animation h1, .fade-animation-side h1 {
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .fade-animation p, .fade-animation-side p {
-    font-size: 22px;
+    font-size: 25px;
     margin: 15px auto;
 }
 
@@ -38,10 +38,10 @@
 }
   
 .fade-in {
-opacity: 1;
+    opacity: 1;
 }
 
 .fade-out {
-opacity: 0;
+    opacity: 0;
 }
   

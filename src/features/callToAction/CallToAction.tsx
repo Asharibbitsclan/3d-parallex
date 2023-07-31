@@ -5,18 +5,18 @@ function CallToAction() {
     return (
         <div className="call-to-action-section container">
             <h3 className="text-center mb-4">
-                <span className="color-primary">JOIN</span> THE WAITING LIST
+                <span className="color-primary">Join</span> The Waiting List
             </h3>
             <form className="call-action-form">
                 <div className="row">
                     <div className="col-4">
-                        <AppInput type="text" labelText="NAME" id="name" />
+                        <AppInput type="text" labelText="Name" id="name" />
                     </div>
                     <div className="col-4">
                         <AppInput
                             required
                             type="text"
-                            labelText="BUSINESS NAME *"
+                            labelText="Business Name *"
                             id="business-name"
                         />
                     </div>
@@ -24,14 +24,14 @@ function CallToAction() {
                         <AppInput
                             required
                             type="email"
-                            labelText="EMAIL *"
+                            labelText="Email *"
                             id="email"
                         />
                     </div>
                 </div>
                 <div className="row mt-4">
                     <div className="col-4">
-                        <AppInput type="text" labelText="PHONE" id="phone" />
+                        <AppInput type="text" labelText="Phone" id="phone" />
                     </div>
                     <div className="col-4">
                         <AppInput

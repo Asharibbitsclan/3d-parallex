@@ -1,6 +1,62 @@
+@media screen and (max-width:980px) {
+
+    .faq-heading p {
+        font-size: 17px;
+    }
+
+    /* .faqs-section {
+        padding: 100px 3%;
+    } */
+
+    .fade-animation h1 {
+        font-size: 23px !important;
+    }
+
+
+    .scene-canvas {
+        width: 60% !important;
+        height: 60% !important;
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner-img,
+    .banner-content {
+        border-radius: 0;
+    }
+
+    .fade-animation-side {
+        width: 100%;
+        top: 0%;
+        transform: translate(0);
+    }
+
+    .fade-animation h1 {
+        font-size: 45px;
+    }
+
+    .fade-animation p {
+        font-size: 17px;
+    }
+
+    .col-md-9 {
+        width: 100% !important;
+    }
+
+
+
+}
+
 @media only screen and (max-width: 480px) {
     .hero-section {
         top: 30%;
+    }
+
+    .container,
+    .container-sm {
+        max-width: 687px;
     }
 
     .hero-section h1 {
@@ -8,26 +64,28 @@
         margin-bottom: 20px;
     }
 
-    .fade-animation {
+    /* .fade-animation {
         top: 8%
+    } */
+
+    .fade-animation h1,
+    .fade-animation-side h1 {
+        font-size: 30px !important;
+        margin-bottom: 10px !important;
     }
 
-    .fade-animation h1, .fade-animation-side h1 {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-
-    .fade-animation p, .fade-animation-side p {
+    .fade-animation p,
+    .fade-animation-side p {
         width: 100%;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .scene-canvas {
-        width: 100%;
-        height: 40%;
-        top: 52%;
+        width: 100% !important;
+        height: 50% !important;
+
     }
-    
+
     .banner {
         margin-top: 100px;
     }
@@ -41,45 +99,48 @@
     }
 
     .faq-heading h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .faq-heading p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .faqs-section .accordion-header button {
-        font-size: 25px;
-        padding: 15px 10px;
+        font-size: 13px;
+        padding: 15px 25px;
     }
 
     .faqs-section .accordion-body {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .join-demo-section h1 {
         font-size: 35px;
     }
 
-    .faqs-doodle, .doodles, .banner-doodle  {
+    .faqs-doodle,
+    .doodles,
+    .banner-doodle {
         display: none;
     }
 
     .fade-animation-side {
         width: 100%;
-        top: 8%;
+        top: 2%;
         transform: translate(0);
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .banner-img, .banner-content {
-        border-radius: 0;
+@media screen and (max-width:375px) {
+    .scene-canvas {
+        height: 44% !important;
     }
+}
 
-    .fade-animation-side {
-        width: 100%;
-        top: 0%;
-        transform: translate(0);
+@media screen and (max-width:320px) {
+    .scene-canvas {
+        /* width: 70% !important; */
+        height: 40% !important;
     }
 }

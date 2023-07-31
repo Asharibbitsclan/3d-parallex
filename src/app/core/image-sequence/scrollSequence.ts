@@ -91,18 +91,8 @@ export class ScrollSequence {
 
         if (starts === "out") u += clientHeight;
         if (ends === "in") d -= clientHeight;
-        if (starts == "in") d -= clientHeight;
-        // start: out, ends: out
-        // const value = ((clientOffsety + clientHeight) - offsetY) / (clientHeight + elementHeight) * 100;
-
-        //start: in, ends: out
-        // const value = (clientOffsety - offsetY) / (elementHeight) * 100;
-
-        //start: out, ends: in
-        // const value = ((clientOffsety + clientHeight) - offsetY) / (elementHeight) * 100;
-
-        // Start: in, ends: in
-        // (clientOffsety - offsetY) / (elementHeight - clientHeight)
+        if (starts === "in") d -= clientHeight;
+   
 
         const value = (u / d) * 100;
         return value > 100 ? 100 : value < 0 ? 0 : value;

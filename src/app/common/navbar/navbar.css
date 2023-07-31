@@ -1,7 +1,7 @@
 .app-navbar {
-    background: white !important;
+    /* background: white !important; */
     margin-bottom: 40px;
-    padding: 0 !important;
+    padding: 2% 0 !important;
 }
 
 .app-navbar-logo {
@@ -19,11 +19,12 @@
 }
 
 .app-navbar-link:hover {
-    color: black !important;
+    color: white !important;
 }
 
 .app-navbar-link:hover .blog-link {
     display: block !important;
+    color: white;
 }
 
 .app-navbar-btn {

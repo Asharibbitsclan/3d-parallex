@@ -49,7 +49,7 @@ function Footer() {
                         </ul>
                     </div>
                     <p className="text-center mt-5 footer-credits">
-                        ©2020 by Bridge Appliances. Proudly created with Wix.com
+                        ©2023 by Bridge Appliances. Proudly created with Wix.com
                     </p>
                 </div>
             </div>

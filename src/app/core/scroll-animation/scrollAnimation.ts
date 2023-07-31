@@ -11,10 +11,10 @@ export function startTextAnimations() {
         const scrollPercentage = (scrollPosition / containerHeight) * 100;
 
         headings.forEach((heading, index) => {
-            if (scrollPercentage >= index * 10.5 && scrollPercentage < 70) {
+            if (scrollPercentage >= index * 7.5 && scrollPercentage < 70) {
                 // Calculate fade-in and fade-out percentages
-                const fadeInPercentage = index * 10.5 + 1;
-                const fadeOutPercentage = (index + 1) * 10.5 - 1;
+                const fadeInPercentage = index * 7.5 + 1;
+                const fadeOutPercentage = (index + 1) * 7.5 - 1;
 
                 if (
                     scrollPercentage >= fadeInPercentage &&
@@ -34,7 +34,7 @@ export function startTextAnimations() {
             }
         });
 
-        if (scrollPercentage >= 70 && scrollPercentage < 73) {
+        if (scrollPercentage >= 69 && scrollPercentage < 73) {
             sideHeadings[1].classList.remove("visible", "fade-in");
             sideHeadings[1].classList.add("fade-out");
             sideHeadings[2].classList.remove("visible", "fade-in");
@@ -42,7 +42,7 @@ export function startTextAnimations() {
 
             sideHeadings[0].classList.add("visible", "fade-in");
             sideHeadings[0].classList.remove("fade-out");
-        } else if (scrollPercentage >= 73 && scrollPercentage < 76) {
+        } else if (scrollPercentage >= 75 && scrollPercentage < 76) {
             sideHeadings[0].classList.remove("visible", "fade-in");
             sideHeadings[0].classList.add("fade-out");
             sideHeadings[2].classList.remove("visible", "fade-in");
@@ -50,7 +50,7 @@ export function startTextAnimations() {
 
             sideHeadings[1].classList.add("visible", "fade-in");
             sideHeadings[1].classList.remove("fade-out");
-        } else if (scrollPercentage >= 76 && scrollPercentage < 79) {
+        } else if (scrollPercentage >= 75 && scrollPercentage < 79) {
             sideHeadings[0].classList.remove("visible", "fade-in");
             sideHeadings[0].classList.add("fade-out");
             sideHeadings[1].classList.remove("visible", "fade-in");

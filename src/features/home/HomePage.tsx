@@ -23,9 +23,8 @@ function HomePage() {
                     <ScrollScene
                         sectionName="scene-01"
                         paddedZeros={4}
-                        totalFrames={1465}
-                        imageExtension="jpeg"
-                        // imagesRoot="https://bridge-appliances.thewonderworkout.com/assets/scenes/V3/scene "
+                        totalFrames={1396}
+                        imageExtension="png"
                         imagesRoot="./assets/scenes/merged/scene "
                         cover
                         playUntil="scroll-out"

@@ -40,12 +40,12 @@ function FaqsSection() {
                         <div className="col-md-3">
                             <h1>FAQ's</h1>
                         </div>
-                        <div className="col-md-9">
+                        <div className="col-md-12">
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry.LoremIpsum is simply
-                                dummy text of the printing and typesetting
-                                industry Lorem Ipsum is simply dummy text of the
+                                dummy text of the printing and typesetting 
+                                Lorem Ipsum is simply dummy text of the
                                 printing and typesetting.
                             </p>
                         </div>

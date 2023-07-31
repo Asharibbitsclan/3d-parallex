@@ -1,47 +1,96 @@
 .fade-animations-container {
     position: absolute;
-    top: 0;
+    top: 100px;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
 
-.fade-animation, .fade-animation-side {
+.fade-animation,
+.fade-animation-side {
     position: sticky;
     width: 100%;
-    top: 4%;
+    top: 0%;
+    padding: 0% 0;
+    margin-top: -55px !important;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     text-align: center;
-    color: black;
+    color: white !important;
 }
 
 .fade-animation-side {
     width: 50%;
-    top: 50%;
+    top: 45%;
     left: 50%;
     text-align: left;
     transform: translateY(-50%);
 }
 
-.fade-animation h1, .fade-animation-side h1 {
-    font-size: 55px;
+.fade-animation h1,
+.fade-animation-side h1 {
+    font-size: 45px;
+    z-index: 2;
+    margin-top: -2%;
+    line-height: 1;
+
 }
 
-.fade-animation p, .fade-animation-side p {
-    font-size: 25px;
+.fade-animation p,
+.fade-animation-side p {
+    font-size: 17px;
     margin: 15px auto;
 }
 
 .visible {
     opacity: 1;
-}
-  
-.fade-in {
-    opacity: 1;
+
+
+
 }
 
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    /* Start from 40px below the container */
+    animation: fade-in-animation 1s forwards;
+    /* filter: blur(0px); */
+
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 1;
+        transform: translateY(40px);
+        /* filter: blur(2px); */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* filter: blur(1px); */
+    }
+}
+
+/* Fade-out animation */
 .fade-out {
     opacity: 0;
+    transform: translateY(0);
+    /* Start from the current position */
+    animation: fade-out-animation 1s forwards;
 }
-  
+
+@keyframes fade-out-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-40px);
+        /* Move up 40px to disappear */
+    }
+}
+

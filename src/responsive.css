@@ -14,8 +14,8 @@
 
 
     .scene-canvas {
-        width: 60% !important;
-        height: 60% !important;
+        width: 50% !important;
+        height: 50% !important;
         top: 50%;
     }
 }

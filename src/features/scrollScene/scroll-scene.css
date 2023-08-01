@@ -24,10 +24,10 @@
 
 .scene-canvas {
     position: absolute;
-    /* height: 55% !important; */
-    /* width: 55% !important; */
+    height: 65% !important;
+    width: 65% !important;
     left: 50%;
-    top: 55%;
+    top: 56%;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

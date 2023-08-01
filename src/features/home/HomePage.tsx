@@ -24,7 +24,7 @@ function HomePage() {
                         sectionName="scene-01"
                         paddedZeros={4}
                         totalFrames={1396}
-                        imageExtension="png"
+                        imageExtension="webp"
                         imagesRoot="./assets/scenes/merged/scene "
                         cover
                         playUntil="scroll-out"

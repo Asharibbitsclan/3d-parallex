@@ -34,7 +34,7 @@ export function startTextAnimations() {
             }
         });
 
-        if (scrollPercentage >= 69 && scrollPercentage < 73) {
+        if (scrollPercentage >= 69 && scrollPercentage < 72) {
             sideHeadings[1].classList.remove("visible", "fade-in");
             sideHeadings[1].classList.add("fade-out");
             sideHeadings[2].classList.remove("visible", "fade-in");
@@ -42,7 +42,7 @@ export function startTextAnimations() {
 
             sideHeadings[0].classList.add("visible", "fade-in");
             sideHeadings[0].classList.remove("fade-out");
-        } else if (scrollPercentage >= 75 && scrollPercentage < 76) {
+        } else if (scrollPercentage >= 73 && scrollPercentage < 76) {
             sideHeadings[0].classList.remove("visible", "fade-in");
             sideHeadings[0].classList.add("fade-out");
             sideHeadings[2].classList.remove("visible", "fade-in");
@@ -50,7 +50,7 @@ export function startTextAnimations() {
 
             sideHeadings[1].classList.add("visible", "fade-in");
             sideHeadings[1].classList.remove("fade-out");
-        } else if (scrollPercentage >= 75 && scrollPercentage < 79) {
+        } else if (scrollPercentage >= 77 && scrollPercentage < 79) {
             sideHeadings[0].classList.remove("visible", "fade-in");
             sideHeadings[0].classList.add("fade-out");
             sideHeadings[1].classList.remove("visible", "fade-in");

@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-
+import React, { useEffect } from "react";
 import { ScrollSequence } from "../../app/core/image-sequence/scrollSequence";
 import "./scroll-scene.css";
 
@@ -7,7 +6,6 @@ interface Props {
     sectionName: string;
     paddedZeros: number;
     totalFrames: number;
-    imageExtension: string;
     imagesRoot: string;
     priorityFrames?: number[];
     cover: boolean;
@@ -19,7 +17,6 @@ interface Props {
 
 function ScrollScene({
     imagesRoot,
-    imageExtension,
     paddedZeros,
     totalFrames,
     cover,
@@ -33,8 +30,9 @@ function ScrollScene({
     useEffect(() => {
         const imageSequences: string[] = [];
         for (let i = 1; i <= totalFrames; i++) {
+            // Replace the imageExtension with "webp" for WebP images
             imageSequences.push(
-                `(${i}).${imageExtension}`
+                `(${i}).webp`
             );
         }
         new ScrollSequence({
@@ -48,7 +46,7 @@ function ScrollScene({
             starts,
             ends,
         });
-    });
+    }, [cover, ends, imagesRoot, playUntil, priorityFrames, sectionName, starts, totalFrames]);
 
     return (
         <div

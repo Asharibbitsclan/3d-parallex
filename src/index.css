@@ -222,7 +222,7 @@ body {
 }
 
 .kitchen-product-img {
-    background: url("/public/assets/images/kitchen-product-bg.png");
+    /* background: url("/public/assets/images/kitchen-product-bg.png"); */
     height: 100%;
     background-position: center;
     background-size: cover;

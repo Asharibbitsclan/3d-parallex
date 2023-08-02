@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { ScrollSequence } from "../../app/core/image-sequence/scrollSequence";
 import "./scroll-scene.css";
@@ -32,7 +33,7 @@ function ScrollScene({
         for (let i = 1; i <= totalFrames; i++) {
             // Replace the imageExtension with "webp" for WebP images
             imageSequences.push(
-                `(${i}).webp`
+                `(${i}).png`
             );
         }
         new ScrollSequence({
